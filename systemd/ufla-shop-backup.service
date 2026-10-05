@@ -1,0 +1,8 @@
+[Unit]
+Description=Serviço de Backup do Banco UFLA Shop
+
+[Service]
+Type=oneshot
+User=postgres
+EnvironmentFile=/etc/ufla-shop.env
+ExecStart=/opt/ufla-shop/scripts/backup.sh
